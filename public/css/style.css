@@ -1,0 +1,134 @@
+html {
+    background-color: #E4E9FD;
+    min-height: 1000px;
+    font-family: 'roboto regular';
+}
+
+h1 {
+    color: #fff;
+    padding: 10px;
+}
+
+.box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+    background-color: #1976d2;
+    text-align: center;
+}
+
+.item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+input:checked+p {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+}
+
+input {
+    margin: 20px;
+}
+
+p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #00204a;
+    overflow-wrap: break-word;
+    width: 70%;
+}
+
+form.item,
+form.directory {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: #1976d2;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    width: 180px;
+    font-family: 'roboto medium';
+}
+
+.circle-btn {
+    padding: 0;
+    min-height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #1976d2;
+    color: #fff;
+    font-size: 30px;
+    border-width: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 70%;
+    box-shadow: inset 0 -3px 0 0 #aeb0b3;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -3px 0 0 #1976d2;
+}
+
+::placeholder {
+    color: grey;
+    opacity: 1;
+}
+
+footer {
+    color: white;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+
+.ripple:hover {
+    background: #62a3ff radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.ripple:active {
+    background-color: #004a9f;
+    background-size: 100%;
+    transition: background 0s;
+}
